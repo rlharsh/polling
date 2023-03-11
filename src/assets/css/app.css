@@ -1,0 +1,58 @@
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  border: 1px solid #171717;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0.6rem 0.6rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.button:hover {
+  background-color: #171717;
+  border: 1px solid #171717;
+  color: #FAFAFA;
+}
+.button__highlight {
+  background-color: #4061c5;
+  color: #FAFAFA;
+  border: 1px solid #4061c5;
+  font-weight: 500;
+}
+
+.script {
+  font-family: "Rochester", cursive;
+  color: #171717;
+}
+
+.text {
+  font-size: 1.375rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.accent {
+  color: #4061c5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #181A1B;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=app.css.map */

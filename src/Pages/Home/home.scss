@@ -1,0 +1,198 @@
+@import '../../globals.scss';
+@import '../../breakpoints.scss';
+
+.hero-about {
+    margin-top: 4.5rem;
+    width:      100%;
+    display:    flex;
+    flex-direction:     column;
+    align-items:        center;
+    color:              $color-white;
+
+    h2 {
+        font-size:      4.5rem;
+        color:          $color-accent;
+        text-align:     center;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 2rem;
+        width: 60%;
+
+        @include media("<tablet") {
+            width: 80%;
+        }
+    }
+
+    &__header {
+        width: 100%;
+        color:  $color-white;
+
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+
+        padding:            2rem 0;
+        border-bottom:      1px solid $color-highlight;
+
+        font-weight:        500;
+        font-size:          1.2rem;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    background-color: transparent;
+
+    @include media("<max") {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include media("<tablet") {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.hero-home {
+    width:      100%;
+    min-height: calc(100vh - 10rem);
+    display:    flex;
+    border-bottom:  1px solid $color-highlight;
+    border-top:     1px solid #171717;
+    margin: 0 auto;
+    color:          $color-white;
+
+    @include media("<tablet", ">=phone") {
+        flex-direction: column;
+    }
+
+    &__left {
+        flex:               1 1 50%;
+        border-right:       1px solid $color-highlight;
+
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+
+        @include media("<max") {
+            border-right: none;
+        }
+
+        padding:            4.5rem;
+
+        h2 {
+            font-size:      4.5rem;
+            text-align:     center;
+
+            @include media("<tablet") {
+                font-size: 3.6rem;
+            }
+        }
+
+        &__button-wrapper {
+            margin-top:     2rem;
+            display:        flex;
+            gap:            1rem;
+
+            @include media("<tablet") {
+                flex-direction: column;
+            }
+        }
+
+        p{
+            margin-top:     4rem;
+            text-align:     center;
+        }
+
+        
+    }
+
+    &__right {
+        flex:       1 1 50%;
+
+        display:            flex;
+        flex-direction:     column;
+
+        &__wrapper {
+            display:        flex;
+            flex-direction: column;
+            width:          100%;
+            align-items: center;
+            height: 100%;
+            
+
+            &__top {
+                height:             100%;
+                width:              100%;
+                border-bottom:      1px solid $color-highlight;
+
+                display:    flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__bottom {
+                width:              100%;
+                height:             100%;
+
+                display:            flex;
+                justify-content:    center;
+                align-items:        center;
+                padding: 1rem;
+
+                @include media("<tablet", ">=phone") {
+                    padding: 8rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+.card-container {
+    position: relative;
+    display:        flex;
+    flex-direction: row;
+    gap:            4rem;
+    margin-top:     8rem;
+    transition: .4s all ease-in-out;
+
+    @include media("<=desktop") {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
+
+.card {
+    width:      20rem;
+    border:     1px solid $color-highlight;
+    background-color: transparent;
+    border-radius:  6px;
+    align-items:    center;
+    padding: 1rem 0;
+    padding-bottom: 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    display:        flex;
+    flex-direction: column;
+    transition: .4s all ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &__description {
+        position: relative;
+        color: $color-white;
+        width:  100%;
+        display:    flex;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 1rem;
+        font-weight: 100;
+        transition: .4s all ease-in-out;
+    }
+}

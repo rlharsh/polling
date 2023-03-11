@@ -1,0 +1,45 @@
+@import '../../globals.scss';
+@import '../../breakpoints.scss';
+
+.header {
+    display:        flex;
+    width:          100%;
+    align-items:    center;
+    margin-top:     2rem;
+    color:          $color-white;
+    font-size:      1.2em;
+    font-weight:    400;
+    padding:        2rem 0;
+    border-bottom:  1px solid $color-highlight;
+
+    @include media("<tablet") {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__icon {
+        margin-right:   .5rem;
+    }
+
+    &__logo {
+        flex:           0 0 auto;
+
+        font-weight:    500;
+        font-size:      1.6em;
+        color: $color-accent;
+    }
+
+    &__nav {
+        flex: 1 1 auto;
+
+        display:            flex;
+        justify-content:    center;
+
+        display:            flex;
+        justify-content:    space-evenly;
+
+        @include media("<tablet") {
+            gap: 2rem;
+        }
+    }
+}

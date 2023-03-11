@@ -1,0 +1,24 @@
+.response-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.response-wrapper h2 {
+  font-weight: 500;
+}
+
+.response {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.response__image-button {
+  position: absolute;
+  right: 1%;
+  top: 14%;
+}
+.response button {
+  font-weight: 500;
+}/*# sourceMappingURL=response.css.map */

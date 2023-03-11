@@ -1,0 +1,43 @@
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  border-radius: 6px;
+  font-size: 1em;
+  padding: 0.6rem 0.6rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FAFAFA;
+}
+.button:hover {
+  background-color: #07633e;
+  color: #FAFAFA;
+}
+.button__highlight {
+  background-color: #406797;
+  color: #FAFAFA;
+}
+
+.script {
+  font-family: "Rochester", cursive;
+  color: #171717;
+}
+
+.text {
+  font-size: 1.375rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.accent {
+  color: #406797;
+}/*# sourceMappingURL=globals.css.map */
