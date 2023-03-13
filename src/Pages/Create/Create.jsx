@@ -55,7 +55,7 @@ const Create = () => {
     let newToken = tokenInfo(token);
 
     try{
-    let response = await axios.post(`http://localhost:3000/verify-token`, { newToken }, headers);
+    let response = await axios.post(`http://97.87.8.198:3000/verify-token`, { newToken }, headers);
     return response.data;
     }catch(error){
     console.log("error ",error);
@@ -126,7 +126,7 @@ const Create = () => {
       console.log(bytes.toString(Crypto.enc.Utf8));
     }
 
-    const URL = 'http://127.0.1:3000/api/poll/store';
+    const URL = 'http://97.87.8.198:3000/api/poll/store';
 
     const handleSubmit = async (e) => {
       e.preventDefault();
